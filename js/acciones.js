@@ -10,9 +10,9 @@ $(document).ready(function(){
 	document.addEventListener("pause",function(){
 		escribehistoria('La APP se pauso');
 	},false);
-<<<<<<< HEAD
-	document.addEventListener("pause",function(){
-		escribehistoria('La APP se pauso');
+
+	document.addEventListener("resume",function(){
+		escribehistoria('La APP se reinicio');
 	},false);
 	document.addEventListener("online",function(){
 		escribehistoria('La APP se conecto a la red');
@@ -29,24 +29,3 @@ $(document).ready(function(){
 function escribehistoria(accion){
 	$('#ehistoria').append('<li>' + accion + '</li>');
 		}
-=======
-		document.addEventListener("resume",function(){
-		escribehistoria('La APP se resumio');
-	},false);
-		document.addEventListener("online",function(){
-		escribehistoria('La APP esta en linea');
-	},false);
-		document.addEventListener("offline",function(){
-		escribehistoria('La APP esta fuera de linea');
-	},false);
-	
-	
-},false);//addEvent
-});//ready
-
-function escribehistoria(h){
-	
-	$('#ehistoria').append('<li>'+h+'</li>');
-}
->>>>>>> 6882c3b20c2dd96363bdc5a68fdffe78726939d7
-	
